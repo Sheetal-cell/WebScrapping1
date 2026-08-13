@@ -46,3 +46,7 @@ print(id_data)
 
 print(id_data.find("h3"))
 print(id_data.find_all("h3"))'''
+
+'''lines=soup.find_all("p")
+for line in lines:
+    print(line.text)'''
