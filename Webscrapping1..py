@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 web=requests.get("https://portfoliosheetal.vercel.app/")
 print(web)
 
@@ -29,3 +29,5 @@ print(type(tag))
 
 #print(soup.find("p"))
 #print(soup.find_all("p"))
+
+print(soup.find_all(string=lambda text: isinstance(text, Comment)))
