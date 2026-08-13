@@ -50,3 +50,8 @@ print(id_data.find_all("h3"))'''
 '''lines=soup.find_all("p")
 for line in lines:
     print(line.text)'''
+
+
+
+for i in soup.find_all("a"):
+    print(i.get("href"))  #gives all the links present in that page
