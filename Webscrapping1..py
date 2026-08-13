@@ -9,4 +9,17 @@ print(web.url)
 print(web.status_code)
 
 soup=BeautifulSoup(web.content,"html.parser")
-print(soup.prettify)
+#print(soup.prettify())
+#print(soup.p)
+#print(soup.title)
+#print(soup.a)
+
+tag=soup.html  
+print(type(tag))
+
+#print(soup.a) - 1st anchor element
+#print(soup.p) -1st para element
+#print(soup.h1) -1st h1 element
+#print(soup.img)  -1st image element
+
+
