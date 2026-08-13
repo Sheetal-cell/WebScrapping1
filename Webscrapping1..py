@@ -18,8 +18,11 @@ tag=soup.html
 print(type(tag))
 
 #print(soup.a) - 1st anchor element
-#print(soup.p) -1st para element
-#print(soup.h1) -1st h1 element
+print(soup.p) #-1st para element
+print(soup.h1) #-1st h1 element
 #print(soup.img)  -1st image element
 
+print(soup.p.string)# only gives op if there is string without any other used tags
+print(soup.title.string)
 
+print(soup.p.get_text())
