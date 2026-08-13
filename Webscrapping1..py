@@ -33,9 +33,16 @@ tag=soup.html
 #print(soup.find_all(string=lambda text: isinstance(text, Comment)))
 
 #print(soup.prettify())
-class_data=soup.find("div",class_="dashboard-tab-content")
+"""class_data=soup.find("div",class_="dashboard-tab-content")
 print(class_data)
 
 
 print(class_data.find("span"))
-print(class_data.find_all("span"))
+print(class_data.find_all("span"))"""
+
+'''id_data=soup.find("div",id="admin-login-modal")
+print(id_data)
+
+
+print(id_data.find("h3"))
+print(id_data.find_all("h3"))'''
