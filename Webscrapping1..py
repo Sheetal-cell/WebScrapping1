@@ -15,7 +15,7 @@ soup=BeautifulSoup(web.content,"html.parser")
 #print(soup.a)
 
 tag=soup.html  
-print(type(tag))
+#print(type(tag))
 
 #print(soup.a) - 1st anchor element
 #print(soup.p) #-1st para element
@@ -30,4 +30,12 @@ print(type(tag))
 #print(soup.find("p"))
 #print(soup.find_all("p"))
 
-print(soup.find_all(string=lambda text: isinstance(text, Comment)))
+#print(soup.find_all(string=lambda text: isinstance(text, Comment)))
+
+#print(soup.prettify())
+class_data=soup.find("div",class_="dashboard-tab-content")
+print(class_data)
+
+
+print(class_data.find("span"))
+print(class_data.find_all("span"))
