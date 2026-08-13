@@ -53,5 +53,10 @@ for line in lines:
 
 
 
-for i in soup.find_all("a"):
-    print(i.get("href"))  #gives all the links present in that page
+'''for i in soup.find_all("a"):
+    print(i.get("href"))  #gives all the links present in that page'''
+
+img=soup.find_all("img")
+for i in img:
+    print(i.get("src"))  #gives all the images present in that page
+    print(i.get("alt"))  #gives all the alt text of images present in that page
